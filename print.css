@@ -1,3 +1,15 @@
-#sidebar {
+@media print {
+  #sidebar, #nav {
   display: none;
+}
+* {
+  background-color: white;
+  color: black;
+  line-height: 1.25em;
+}
+a::after { content: " (" attr(href) ")";}
+
+img {
+  display: none;
+}
 }
